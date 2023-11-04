@@ -1,0 +1,11 @@
+zone "james.dn42" {
+      type master;
+      file "/etc/bind/db.james.dn42";
+      allow-query { any; };
+};
+
+zone "64/27.114.22.172.in-addr.arpa" {
+        type master;
+        file "/etc/bind/db.114.22.172.in-addr.arpa";
+        allow-query { any; };
+};

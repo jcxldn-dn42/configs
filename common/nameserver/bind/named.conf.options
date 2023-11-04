@@ -1,0 +1,13 @@
+options {
+        directory "/var/cache/bind";
+        // hide version
+        version "not available";
+        recursion no;
+        allow-transfer { none; };
+
+        dnssec-validation auto;
+
+        // conform to RFC1035
+        auth-nxdomain no;
+        listen-on-v6 { any; };
+};

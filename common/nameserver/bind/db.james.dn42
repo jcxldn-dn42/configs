@@ -1,0 +1,28 @@
+$TTL    86400
+$ORIGIN james.dn42.
+@       IN      SOA     ns.anycast.james.dn42. hostmaster.james.dn42. (
+                     2023110401         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                          86400 )       ; Negative Cache TTL
+; Name servers for this domain
+@       IN      NS      ns.anycast.james.dn42.
+@       IN      NS      ns.anycast.james.dn42.
+
+; Mail servers
+
+; A Records
+@       IN      A       172.22.114.65
+www     IN      A       172.22.114.65
+
+; AAAA records
+
+; NS A records
+ns.anycast     IN      A       172.22.114.68
+
+; NS AAAA Records
+ns.anycast     IN      AAAA    fddd:ac53:f33f::5
+
+; TXT records
+@       IN      TXT     "uwu=owo"
