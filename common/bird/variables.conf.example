@@ -1,0 +1,10 @@
+define OWNAS =  4242422840;
+define OWNIP =  172.22.114.64;
+define OWNIPv6 = fddd:ac53:f33f:0000:0000:0000:0000:0001;
+define OWNNET = 172.22.114.64/27;
+define OWNNETv6 = fddd:ac53:f33f::/48;
+define OWNNETSET = [172.22.114.64/27+];
+define OWNNETSETv6 = [fddd:ac53:f33f::/48+];
+
+router id OWNIP;
+hostname "example.james.dn42"; # jcx addition

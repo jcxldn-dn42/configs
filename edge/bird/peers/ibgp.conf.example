@@ -1,0 +1,16 @@
+protocol bgp ibgp_example {
+    local as OWNAS;
+    neighbor 2001:db8::1 as OWNAS;
+
+    ipv4 {
+        import where source = RTS_BGP && is_valid_network() && !is_self_net();
+        export where source = RTS_BGP && is_valid_network() && !is_self_net();
+        extended next hop on;
+    };
+
+    ipv6 {
+        import where source = RTS_BGP && is_valid_network_v6() && !is_self_net_v6();
+        export where source = RTS_BGP && is_valid_network_v6() && !is_self_net_v6();
+        extended next hop on;
+    };
+}
