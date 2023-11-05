@@ -1,7 +1,7 @@
 $TTL    86400
 $ORIGIN james.dn42.
 @       IN      SOA     ns.anycast.james.dn42. hostmaster.james.dn42. (
-                     2023110502         ; Serial
+                     2023110503         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
