@@ -17,13 +17,19 @@ $ORIGIN james.dn42.
 www     IN      A       172.22.114.65
 
 ; A Records - PoPs
+v4.edge01.par01.fr.net  IN  A 172.22.114.64
 edge01.par01.fr.net  IN  A 172.22.114.64
+v4.edge01.nyc01.us.net  IN  A 172.22.114.65
 edge01.nyc01.us.net  IN  A 172.22.114.65
+v4.edge01.lon01.gb.net  IN  A 172.22.114.70
 edge01.lon01.gb.net  IN  A 172.22.114.70
 
 ; AAAA records - PoPs
+v6.edge01.par01.fr.net  IN  AAAA  fddd:ac53:f33f::1
 edge01.par01.fr.net  IN  AAAA  fddd:ac53:f33f::1
+v6.edge01.nyc01.us.net  IN  AAAA  fddd:ac53:f33f::2
 edge01.nyc01.us.net  IN  AAAA  fddd:ac53:f33f::2
+v6.edge01.lon01.gb.net  IN  AAAA  fddd:ac53:f33f::7
 edge01.lon01.gb.net  IN  AAAA  fddd:ac53:f33f::7
 
 ; NS A records
