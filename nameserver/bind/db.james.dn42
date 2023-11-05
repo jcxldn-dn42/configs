@@ -1,7 +1,7 @@
 $TTL    86400
 $ORIGIN james.dn42.
 @       IN      SOA     ns.anycast.james.dn42. hostmaster.james.dn42. (
-                     2023110401         ; Serial
+                     2023110502         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -16,7 +16,15 @@ $ORIGIN james.dn42.
 @       IN      A       172.22.114.65
 www     IN      A       172.22.114.65
 
-; AAAA records
+; A Records - PoPs
+edge01.par01.fr.net  IN  A 172.22.114.64
+edge01.nyc01.us.net  IN  A 172.22.114.65
+edge01.lon01.gb.net  IN  A 172.22.114.70
+
+; AAAA records - PoPs
+edge01.par01.fr.net  IN  AAAA  fddd:ac53:f33f::1
+edge01.nyc01.us.net  IN  AAAA  fddd:ac53:f33f::2
+edge01.lon01.gb.net  IN  AAAA  fddd:ac53:f33f::7
 
 ; NS A records
 ns.anycast     IN      A       172.22.114.68
