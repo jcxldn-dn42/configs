@@ -1,0 +1,30 @@
+acl "trusted" {
+        127.0.0.1;
+        172.22.114.64/27;
+        fddd:ac53:f33f::/48;
+};
+
+options {
+        dns64 64:ff9b::/96 {
+                clients { any; };
+        };
+
+        directory "/var/cache/bind";
+
+        // hide version
+        version "not available";
+        recursion yes;
+        allow-recursion { trusted; };
+        allow-transfer { none; };
+        allow-query { trusted; };
+        dnssec-validation no;
+        //validate-except { "dn42"; };
+
+        // conform to RFC1035
+        auth-nxdomain no;
+        listen-on-v6 { any; };
+        
+        // dn42 dns:
+        // disable the integrated handling of RFC1918 and non-assigned IPv6 space reverse dns
+        empty-zones-enable no;
+};
