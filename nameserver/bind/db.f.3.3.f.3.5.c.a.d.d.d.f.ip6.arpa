@@ -1,4 +1,3 @@
-$ORIGIN 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.3.3.f.3.5.c.a.d.d.d.f.ip6.arpa.
 $TTL    604800
 @       IN      SOA     ns.anycast.james.dn42. webmaster.james.dn42. (
                      2023121401         ; Serial
@@ -9,6 +8,8 @@ $TTL    604800
 ;
 @       IN      NS      ns.anycast.james.dn42.
 
+; removed a zero
+$ORIGIN 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.3.3.f.3.5.c.a.d.d.d.f.ip6.arpa.
 
 1      IN      PTR     edge01.par01.fr.net.james.dn42.
 2      IN      PTR     edge01.nyc01.us.net.james.dn42.
