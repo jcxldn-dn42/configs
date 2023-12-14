@@ -1,7 +1,7 @@
 $ORIGIN 64/27.114.22.172.in-addr.arpa.
 $TTL    604800
 @       IN      SOA     ns.anycast.james.dn42. webmaster.james.dn42. (
-                     2023110401         ; Serial
+                     2023121401         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -16,3 +16,5 @@ $TTL    604800
 67      IN      PTR     dns.anycast.james.dn42.
 68      IN      PTR     ns.anycast.james.dn42.
 69      IN      PTR     cloudflare.gw.james.dn42.
+70      IN      PTR     edge01.lon01.gb.net.james.dn42.
+71      IN      PTR     wireguard.gw.james.dn42.

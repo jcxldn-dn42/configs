@@ -1,0 +1,21 @@
+$ORIGIN 48/0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.3.3.f.3.5.c.a.d.d.d.f.ip6.arpa.
+$TTL    604800
+@       IN      SOA     ns.anycast.james.dn42. webmaster.james.dn42. (
+                     2023121401         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns.anycast.james.dn42.
+
+
+1      IN      PTR     edge01.par01.fr.net.james.dn42.
+2      IN      PTR     edge01.nyc01.us.net.james.dn42.
+3      IN      PTR     nat64.dns.anycast.james.dn42.
+4      IN      PTR     dns.anycast.james.dn42.
+5      IN      PTR     ns.anycast.james.dn42.
+6      IN      PTR     cloudflare.gw.james.dn42.
+7      IN      PTR     edge01.lon01.gb.net.james.dn42.
+8      IN      PTR     wireguard.gw.james.dn42.
+

@@ -1,7 +1,7 @@
 $TTL    86400
 $ORIGIN james.dn42.
 @       IN      SOA     ns.anycast.james.dn42. hostmaster.james.dn42. (
-                     2023110503         ; Serial
+                     2023121401         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -10,33 +10,40 @@ $ORIGIN james.dn42.
 @       IN      NS      ns.anycast.james.dn42.
 @       IN      NS      ns.anycast.james.dn42.
 
+; Name server records (glue in registry)
+ns.anycast     IN      A       172.22.114.68
+ns.anycast     IN      AAAA    fddd:ac53:f33f::5
+
 ; Mail servers
 
 ; A Records
-@       IN      A       172.22.114.65
-www     IN      A       172.22.114.65
-
-; A Records - PoPs
+; ---------
+; Apex
+;@       IN      A       172.22.114.65
+;www     IN      A       172.22.114.65
+; PoPs
 v4.edge01.par01.fr.net  IN  A 172.22.114.64
 edge01.par01.fr.net  IN  A 172.22.114.64
 v4.edge01.nyc01.us.net  IN  A 172.22.114.65
 edge01.nyc01.us.net  IN  A 172.22.114.65
 v4.edge01.lon01.gb.net  IN  A 172.22.114.70
 edge01.lon01.gb.net  IN  A 172.22.114.70
+; Gateways
+cloudflare.gw  IN  A 172.22.114.69
+wireguard.gw  IN  A 172.22.114.71
 
-; AAAA records - PoPs
+; AAAA records
+; ------------
+; PoPs
 v6.edge01.par01.fr.net  IN  AAAA  fddd:ac53:f33f::1
 edge01.par01.fr.net  IN  AAAA  fddd:ac53:f33f::1
 v6.edge01.nyc01.us.net  IN  AAAA  fddd:ac53:f33f::2
 edge01.nyc01.us.net  IN  AAAA  fddd:ac53:f33f::2
 v6.edge01.lon01.gb.net  IN  AAAA  fddd:ac53:f33f::7
 edge01.lon01.gb.net  IN  AAAA  fddd:ac53:f33f::7
-
-; NS A records
-ns.anycast     IN      A       172.22.114.68
-
-; NS AAAA Records
-ns.anycast     IN      AAAA    fddd:ac53:f33f::5
+; Gateways
+cloudflare.gw IN  AAAA  fddd:ac53:f33f::6
+wireguard.gw IN  AAAA  fddd:ac53:f33f::8
 
 ; TXT records
 @       IN      TXT     "uwu=owo"
