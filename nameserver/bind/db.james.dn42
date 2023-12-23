@@ -1,7 +1,7 @@
 $TTL    86400
 $ORIGIN james.dn42.
 @       IN      SOA     ns.anycast.james.dn42. hostmaster.james.dn42. (
-                     2023121401         ; Serial
+                     2023122301         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
@@ -28,6 +28,8 @@ v4.edge01.nyc01.us.net  IN  A 172.22.114.65
 edge01.nyc01.us.net  IN  A 172.22.114.65
 v4.edge01.lon01.gb.net  IN  A 172.22.114.70
 edge01.lon01.gb.net  IN  A 172.22.114.70
+v4.edge02.par01.fr.net  IN  A 172.22.114.72
+edge02.par01.fr.net IN  A 172.22.114.72
 ; Gateways
 cloudflare.gw  IN  A 172.22.114.69
 wireguard.gw  IN  A 172.22.114.71
@@ -41,6 +43,8 @@ v6.edge01.nyc01.us.net  IN  AAAA  fddd:ac53:f33f::2
 edge01.nyc01.us.net  IN  AAAA  fddd:ac53:f33f::2
 v6.edge01.lon01.gb.net  IN  AAAA  fddd:ac53:f33f::7
 edge01.lon01.gb.net  IN  AAAA  fddd:ac53:f33f::7
+v6.edge02.par01.fr.net  IN  AAAA  fddd:ac53:f33f::9
+edge02.par01.fr.net IN  AAAA  fddd:ac53:f33f::9
 ; Gateways
 cloudflare.gw IN  AAAA  fddd:ac53:f33f::6
 wireguard.gw IN  AAAA  fddd:ac53:f33f::8
